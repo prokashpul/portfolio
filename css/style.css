@@ -107,6 +107,10 @@ p {
   width: 50%;
 }
 
+.home h1 span {
+  color: var(--main-color);
+}
+
 .home-content h1 {
   font-size: 5.6rem;
   font-weight: 700;
