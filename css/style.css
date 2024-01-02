@@ -14,11 +14,11 @@
 
 /* Root setup */
 :root {
-  --bg-color: #081b29;
+  --bg-color: #081B29;
   --second-bg-color: #112e42;
   --nav-bg-color: #9bc52f;
   --text-color: #ededed;
-  --main-color: #00abfe;
+  --main-color: #069ff1;
 }
 
 html {
@@ -413,7 +413,7 @@ p {
 
 /* Skills Section style */
 .skills {
-  min-height: auto;
+  /* min-height: auto; */
   background-color: var(--second-bg-color);
 }
 
@@ -499,4 +499,68 @@ p {
 
 .skill-column:nth-child(2) .skill-content .progress:nth-child(4) .bar span {
   width: 80%
+}
+
+/* contract Area */
+.contact form {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact .input-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact .input-box .input-field {
+  position: relative;
+  width: 49%;
+  margin: .8rem 0;
+}
+
+.contact .input-box .input-field input,
+.contact .textarea-field textarea {
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: transparent;
+  border: .2rem solid var(--main-color);
+  border-radius: .6rem;
+
+}
+
+.textarea-field textarea {
+  resize: vertical;
+
+}
+
+.textarea-field {
+  margin: .8rem 0 2.7rem;
+}
+
+
+.contact .input-box .input-field input:focus,
+.contact .textarea-field textarea:focus {
+  background: var(--second-bg-color);
+}
+
+.contact .input-box .input-field input::placeholder,
+.contact .textarea-field textarea::placeholder {
+
+  color: var(--text-color);
+}
+
+.contact .btn-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact .btn-box .btn {
+  cursor: pointer;
 }
