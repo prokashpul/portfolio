@@ -63,8 +63,12 @@ p {
   left: 0;
   top: 0;
   background-color: transparent;
-  padding: 2rem 9%;
+  padding: 1.5rem 9%;
   z-index: 100;
+}
+
+.nav.sticky {
+  background-color: #000000;
 }
 
 .nav-links {
