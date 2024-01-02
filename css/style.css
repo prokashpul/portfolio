@@ -564,3 +564,44 @@ p {
 .contact .btn-box .btn {
   cursor: pointer;
 }
+
+/* footer area */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 9%;
+  background: #000000;
+}
+
+.foolter-iconTop a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background-color: var(--main-color);
+  border: .2rem solid var(--main-color);
+  border-radius: .6rem;
+  font-size: 2rem;
+  z-index: 1;
+  overflow: hidden;
+
+}
+
+.foolter-iconTop a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  background-color: var(--bg-color);
+  border-radius: .6rem;
+  transition: .5s;
+}
+
+.foolter-iconTop a:hover:before {
+  width: 100%;
+}
