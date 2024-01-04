@@ -609,3 +609,78 @@ p {
 .foolter-iconTop a:hover:before {
   width: 100%;
 }
+
+
+
+/* Brackpoint responsive */
+
+@media(max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media(max-width: 991px) {
+  .header {
+    padding: 2rem 4%;
+  }
+
+  .nav {
+    padding: 2rem 4%;
+  }
+
+  .homeImg-hover {
+    display: none;
+  }
+
+  .home-content {
+    width: 100%;
+  }
+
+  .home-content .text-animation {
+    max-width: 100%;
+  }
+
+  section {
+    padding: 10rem 4%;
+    min-height: 100%;
+  }
+
+  .home {
+    padding: 10rem 4%;
+  }
+
+  .footer {
+    padding: 2rem 4%
+  }
+}
+
+@media(max-width: 768px) {
+  .nav {
+    background-color: var(--bg-color)
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    background: var(--bg-color);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+  }
+
+  .nav-links {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+}
