@@ -1,6 +1,16 @@
 // Togle icon menu bar
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+let navlink = document.querySelector(".nav-links");
 
-
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle("bx-x")
+    navbar.classList.toggle("active")
+}
+navlink.onclick = () => {
+    menuIcon.classList.toggle("bx-x")
+    navbar.classList.toggle("active")
+}
 // scroll section
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("nav a");
