@@ -7,10 +7,7 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle("bx-x")
     navbar.classList.toggle("active")
 }
-navlink.onclick = () => {
-    menuIcon.classList.toggle("bx-x")
-    navbar.classList.toggle("active")
-}
+
 // scroll section
 let sections = document.querySelectorAll("section");
 let navLinks = document.querySelectorAll("nav a");
@@ -36,4 +33,8 @@ window.onscroll = () => {
     // scroll header
     let nav = document.querySelector("nav");
     nav.classList.toggle("sticky", window.scrollY > 100);
+
+    // remove scrole active and icon
+    menuIcon.classList.remove("bx-x")
+    navbar.classList.remove("active")
 }

@@ -122,16 +122,24 @@ p {
 }
 
 .home-content .text-animation {
-  max-width: 38.6rem;
+  width: 33rem;
   position: relative;
 }
 
 .home-content .text-animation h3 {
-  font-size: 3.2rem;
+  font-size: 3.3rem;
   font-weight: 700;
   color: transparent;
   -webkit-text-stroke: 0.7px var(--main-color);
+  background-image: linear-gradient(var(--main-color), var(--main-color));
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: homeText 6s linear infinite;
+  animation-delay: 2s;
 }
+
+
 
 .home-content p {
   margin: 2rem 0 4rem;
@@ -310,6 +318,7 @@ p {
 .about-content h3 {
   font-size: 3.2rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .about-content p {
@@ -691,5 +700,36 @@ p {
     display: block;
     font-size: 2rem;
     margin: 2rem 0;
+  }
+
+  .contact .input-box .input-field {
+    width: 100%;
+  }
+
+
+
+
+}
+
+@media(max-width: 520px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
+
+/* animation key */
+@keyframes homeText {
+
+  0%,
+  10%,
+  100% {
+    background-position: -33rem 0;
+  }
+
+  65%,
+  85% {
+    background-position: 0 0;
   }
 }
