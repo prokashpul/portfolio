@@ -338,6 +338,7 @@ p {
   border-bottom: .2rem solid var(--main-color);
   border-left: .2rem solid transparent;
   border-right: .2rem solid transparent;
+  animation: aboutSpring 8s linear infinite;
 }
 
 /* Education and exprence Section Style */
@@ -731,5 +732,13 @@ p {
   65%,
   85% {
     background-position: 0 0;
+  }
+}
+
+/* spring */
+
+@keyframes aboutSpring {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
